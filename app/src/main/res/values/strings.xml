@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ADB Toggle</string>
+    <string name="subtitle">USB and Wireless debugging controls without Shizuku</string>
+    <string name="setup_permission">One-time setup</string>
+    <string name="permission_granted">Permission granted</string>
+    <string name="permission_missing">Permission missing</string>
+    <string name="setup_description">Install the app, connect with ADB once, then grant WRITE_SECURE_SETTINGS. The launch icons and widget work independently afterward.</string>
+    <string name="copy_command">Copy ADB grant command</string>
+    <string name="command_copied">Grant command copied</string>
+    <string name="usb_debugging">USB debugging</string>
+    <string name="wireless_debugging">Wireless debugging</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="turn_on">Turn on</string>
+    <string name="turn_off">Turn off</string>
+    <string name="shortcuts">Launcher shortcuts and widget</string>
+    <string name="shortcuts_description">The installation adds two secondary launcher icons matching USB and Wireless debugging. Their artwork and labels change with the stored state. A two-button home-screen widget is also available.</string>
+    <string name="open_developer_options">Open Developer options</string>
+    <string name="open_wireless_settings">Open Wireless debugging settings</string>
+    <string name="refresh_status">Refresh status</string>
+    <string name="permission_needed_toast">Open ADB Toggle and finish the one-time permission setup.</string>
+    <string name="unknown_toggle">Unknown debugging toggle</string>
+    <string name="usb">USB</string>
+    <string name="wireless">Wireless</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="widget_description">Toggle USB and Wireless debugging</string>
+</resources>

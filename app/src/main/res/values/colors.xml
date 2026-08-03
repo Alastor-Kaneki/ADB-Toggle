@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="surface">#101014</color>
+    <color name="surface_alt">#202028</color>
+    <color name="accent">#BB86FC</color>
+    <color name="enabled">#5CF2A9</color>
+    <color name="disabled">#FF6B7A</color>
+    <color name="icon_off">#8F8F9A</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B8B8C2</color>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="ADB Toggle"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdbToggle">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ToggleActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@style/Theme.AdbToggle.Transparent" />
+
+        <activity-alias
+            android:name=".UsbToggleOffAlias"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_usb_off"
+            android:label="USB Debugging"
+            android:roundIcon="@drawable/ic_usb_off"
+            android:targetActivity=".ToggleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".UsbToggleOnAlias"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/ic_usb_on"
+            android:label="USB Debugging: On"
+            android:roundIcon="@drawable/ic_usb_on"
+            android:targetActivity=".ToggleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".WifiToggleOffAlias"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_wifi_off"
+            android:label="Wireless Debugging"
+            android:roundIcon="@drawable/ic_wifi_off"
+            android:targetActivity=".ToggleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".WifiToggleOnAlias"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/ic_wifi_on"
+            android:label="Wireless Debugging: On"
+            android:roundIcon="@drawable/ic_wifi_on"
+            android:targetActivity=".ToggleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <receiver
+            android:name=".ToggleWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/toggle_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".DebuggingStateReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
