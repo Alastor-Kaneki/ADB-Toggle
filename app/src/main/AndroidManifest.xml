@@ -28,10 +28,10 @@
             android:name=".UsbToggleActivity"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:icon="@drawable/ic_usb_on"
+            android:icon="@mipmap/ic_usb_toggle"
             android:label="USB Debugging"
             android:noHistory="true"
-            android:roundIcon="@drawable/ic_usb_on"
+            android:roundIcon="@mipmap/ic_usb_toggle"
             android:theme="@style/Theme.AdbToggle.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,10 +43,10 @@
             android:name=".WifiToggleActivity"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:icon="@drawable/ic_wifi_on"
+            android:icon="@mipmap/ic_wifi_toggle"
             android:label="Wireless Debugging"
             android:noHistory="true"
-            android:roundIcon="@drawable/ic_wifi_on"
+            android:roundIcon="@mipmap/ic_wifi_toggle"
             android:theme="@style/Theme.AdbToggle.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
