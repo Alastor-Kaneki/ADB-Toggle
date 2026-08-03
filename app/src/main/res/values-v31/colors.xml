@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">@android:color/system_neutral1_1000</color>
+    <color name="surface">@android:color/system_neutral1_900</color>
+    <color name="surface_alt">@android:color/system_neutral2_800</color>
+    <color name="accent">@android:color/system_accent1_300</color>
+    <color name="enabled">@android:color/system_accent1_300</color>
+    <color name="disabled">@android:color/system_accent2_400</color>
+    <color name="icon_off">@android:color/system_neutral2_400</color>
+    <color name="text_primary">@android:color/system_neutral1_50</color>
+    <color name="text_secondary">@android:color/system_neutral2_200</color>
+    <color name="panel_stroke">@android:color/system_neutral2_700</color>
+    <color name="widget_surface">@android:color/system_neutral1_900</color>
+    <color name="widget_button">@android:color/system_neutral2_800</color>
+    <color name="widget_button_pressed">@android:color/system_accent1_700</color>
+</resources>
