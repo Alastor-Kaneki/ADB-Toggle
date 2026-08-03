@@ -95,35 +95,10 @@ public final class DebuggingController {
     }
 
     public static void refreshAll(Context context) {
-        updateLauncherAliases(context);
         int[] widgetIds = AppWidgetManager.getInstance(context).getAppWidgetIds(
                 new ComponentName(context, ToggleWidgetProvider.class)
         );
         ToggleWidgetProvider.updateWidgets(context, widgetIds);
-    }
-
-    public static void updateLauncherAliases(Context context) {
-        boolean usb = isUsbEnabled(context);
-        boolean wifi = isWifiEnabled(context);
-        setAlias(context, "UsbToggleOnAlias", usb);
-        setAlias(context, "UsbToggleOffAlias", !usb);
-        setAlias(context, "WifiToggleOnAlias", wifi);
-        setAlias(context, "WifiToggleOffAlias", !wifi);
-    }
-
-    private static void setAlias(Context context, String alias, boolean enabled) {
-        ComponentName component = new ComponentName(
-                context,
-                context.getPackageName() + "." + alias
-        );
-        int state = enabled
-                ? PackageManager.COMPONENT_ENABLED_STATE_ENABLED
-                : PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
-        context.getPackageManager().setComponentEnabledSetting(
-                component,
-                state,
-                PackageManager.DONT_KILL_APP
-        );
     }
 
     private static SharedPreferences preferences(Context context) {
