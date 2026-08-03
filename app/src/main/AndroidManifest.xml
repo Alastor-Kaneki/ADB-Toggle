@@ -25,67 +25,34 @@
         </activity>
 
         <activity
-            android:name=".ToggleActivity"
+            android:name=".UsbToggleActivity"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:noHistory="true"
-            android:theme="@style/Theme.AdbToggle.Transparent" />
-
-        <activity-alias
-            android:name=".UsbToggleOffAlias"
-            android:enabled="true"
-            android:exported="true"
-            android:icon="@drawable/ic_usb_off"
-            android:label="USB Debugging"
-            android:roundIcon="@drawable/ic_usb_off"
-            android:targetActivity=".ToggleActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity-alias>
-
-        <activity-alias
-            android:name=".UsbToggleOnAlias"
-            android:enabled="false"
-            android:exported="true"
             android:icon="@drawable/ic_usb_on"
-            android:label="USB Debugging: On"
+            android:label="USB Debugging"
+            android:noHistory="true"
             android:roundIcon="@drawable/ic_usb_on"
-            android:targetActivity=".ToggleActivity">
+            android:theme="@style/Theme.AdbToggle.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity-alias>
+        </activity>
 
-        <activity-alias
-            android:name=".WifiToggleOffAlias"
-            android:enabled="true"
-            android:exported="true"
-            android:icon="@drawable/ic_wifi_off"
-            android:label="Wireless Debugging"
-            android:roundIcon="@drawable/ic_wifi_off"
-            android:targetActivity=".ToggleActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity-alias>
-
-        <activity-alias
-            android:name=".WifiToggleOnAlias"
-            android:enabled="false"
+        <activity
+            android:name=".WifiToggleActivity"
+            android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@drawable/ic_wifi_on"
-            android:label="Wireless Debugging: On"
+            android:label="Wireless Debugging"
+            android:noHistory="true"
             android:roundIcon="@drawable/ic_wifi_on"
-            android:targetActivity=".ToggleActivity">
+            android:theme="@style/Theme.AdbToggle.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity-alias>
+        </activity>
 
         <receiver
             android:name=".ToggleWidgetProvider"
