@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="surface">#101014</color>
+    <color name="surface_alt">#202028</color>
+    <color name="accent">#BB86FC</color>
+    <color name="enabled">#BB86FC</color>
+    <color name="disabled">#CF6679</color>
+    <color name="icon_off">#8F8F9A</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B8B8C2</color>
+    <color name="panel_stroke">#30303A</color>
+    <color name="widget_surface">#F2000000</color>
+    <color name="widget_button">#18181E</color>
+    <color name="widget_button_pressed">#30303A</color>
+</resources>

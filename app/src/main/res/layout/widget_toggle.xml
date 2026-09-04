@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/widget_usb_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/widget_button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/widget_usb_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/usb_debugging"
+            android:src="@drawable/ic_usb_off" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/usb"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_usb_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/off"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget_wifi_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/widget_button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/widget_wifi_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/wireless_debugging"
+            android:src="@drawable/ic_wifi_off" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/wireless"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_wifi_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/off"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</LinearLayout>
